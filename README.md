@@ -10,6 +10,7 @@ fetchDonationsForParticipant(participantId = "REPLACE WITH YOUR ID HERE, NO QUOT
 example: fetchDonationsForParticipant(participantId = 12356)
 
 You can find your participantID in the url of your Extra Life page:
+
 extra-life.org/index.cfm?fuseaction=donordrive.participant&participantID=123456  <----
 
 All the styles are fairly simple.
