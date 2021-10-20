@@ -45,7 +45,7 @@
           })
       },
       methods: {
-        async fetchDonationsForParticipant(participantId = 449848) {
+        async fetchDonationsForParticipant(participantId = "REPLACE WITH YOUR ID HERE, NO QUOTES") {
           const response = await fetch(`${this.apiUrl}/participants/${participantId}/donations`)
           return response.json()
         }
