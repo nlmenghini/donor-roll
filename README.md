@@ -33,3 +33,20 @@ If you want to change those look for the classes 'donor-name', 'donor-message', 
 The speed at which is scrolls is a simple time setting. Not the best but it works.
 You should tweak this based on how many donations you have/expect to have.
 Basically if you have 10 donations then 120s will seem like forever. If you have 500 donations 120s is going to make them fly by.
+
+Find it here in donor-roll.css:
+
+.wrapper {
+    animation: 120s credits linear infinite; <----
+}
+
+You will also probably need to edit the 'credits' 100% keyframe depending on how many donos you have so that it doesn't clip.
+Example: 35 donos needs around -700% to look smooth an not clip.
+
+Find that here in donor-roll.css:
+
+@keyframes credits {
+    100% {
+        top: -700%; <----
+    }
+}

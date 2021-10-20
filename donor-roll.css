@@ -38,9 +38,17 @@ body {
 h1 {
     text-align: center;
     font-family: "Gilroy-Heavy", Verdana, Geneva, Tahoma, sans-serif;
-    margin: 1em 0;
+    margin-bottom: 1em;
     font-size: 8vw;
     line-height: 0.85;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Gilroy-Heavy", Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 5em;
+    font-size: 6vw;
+    line-height: 1.0;
 }
 
 ul{
@@ -87,10 +95,10 @@ li .donation-date {
   
 @keyframes credits {
     0% {
-        top: 100%;
+        top: 150%;
     }
     100% {
-        top: -500%;
+        top: -700%;
     }
 }
 
@@ -98,6 +106,10 @@ li .donation-date {
 
     h1 {
         font-size: 60px;
+    }
+
+    h2 {
+        font-size: 40px;
     }
 
     li .donor-name {
