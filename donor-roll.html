@@ -11,9 +11,8 @@
       <h1>{{ message }}</h1>
       <ul>
         <li v-for="donor in donors" :key="donor.donationID">
-          <!-- <img class="avatar" :src="donor.avatarImageURL" alt="avatar"> -->
           <div class="donor-name">{{ donor.displayName || 'Mysterious Donor' }}</div>
-          <strong class="donation-amount">${{ donor.amount }}</strong>
+          <div class="donation-amount">${{ donor.amount }}</div>
           <div class="donor-message">{{ donor.message }}</div>
           <div class="donation-date">{{ donor.createdDateUTC | toLocaleTime }}</div>
         </li>
@@ -47,7 +46,6 @@
       },
       methods: {
         async fetchDonationsForParticipant(participantId = 449848) {
-          // /participants/449848/donations
           const response = await fetch(`${this.apiUrl}/participants/${participantId}/donations`)
           return response.json()
         }
