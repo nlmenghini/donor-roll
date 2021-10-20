@@ -28,4 +28,8 @@ html, body {
 }
 
 The text sizes become static at anything below 750px width and grow with the view port.
-If you want to change those look for the 
+If you want to change those look for the classes 'donor-name', 'donor-message', 'donation-amoun't, and 'donation-date'.
+
+The speed at which is scrolls is a simple time setting. Not the best but it works.
+You should tweak this based on how many donations you have/expect to have.
+Basically if you have 10 donations then 120s will seem like forever. If you have 500 donations 120s is going to make them fly by.
