@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Thanks for all the fish</title>
+  <link rel="stylesheet" href="donor-roll.css">
+  <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <div id="app">
+      <h1>{{ message }}</h1>
+      <ul>
+        <li v-for="donor in donors" :key="donor.donationID">
+          <!-- <img class="avatar" :src="donor.avatarImageURL" alt="avatar"> -->
+          <div class="donor-name">{{ donor.displayName || 'Mysterious Donor' }}</div>
+          <strong class="donation-amount">${{ donor.amount }}</strong>
+          <div class="donor-message">{{ donor.message }}</div>
+          <div class="donation-date">{{ donor.createdDateUTC | toLocaleTime }}</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        apiUrl: 'https://www.extra-life.org/api',
+        message: 'Donors',
+        donors: []
+      },
+      filters: {
+        toLocaleTime: function (value) {
+          if (!value) return ''
+          return new Date(value).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: '2-digit' })
+        }
+      },
+      created: async function() {
+        this.fetchDonationsForParticipant()
+          .then((donors) => {
+            console.log('DONORS', donors)
+            this.donors = donors
+          })
+          .catch((error) => {
+            console.log('Error', error)
+          })
+      },
+      methods: {
+        async fetchDonationsForParticipant(participantId = 449848) {
+          // /participants/449848/donations
+          const response = await fetch(`${this.apiUrl}/participants/${participantId}/donations`)
+          return response.json()
+        }
+      }
+    })
+  </script>
+
+  <style>
+    li {
+      list-style: none;
+      margin-bottom: 4px;
+    }
+
+    .avatar {
+      width: 50px;
+      height: 50px;
+    }
+  </style>
+</body>
+</html>

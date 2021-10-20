@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "Gilroy-Heavy";
+    src: url("fonts/Gilroy-Heavy.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Gilroy-SemiBold";
+    src: url("fonts/Gilroy-SemiBold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Gilroy-Medium";
+    src: url("fonts/Gilroy-Medium.otf") format("opentype");
+}
+
+html, body {
+    height: 100%;
+    color: white;
+  }
+
+body {
+    overflow: hidden;
+}
+
+.wrapper {
+    position: relative;
+    top: 100%;
+    margin:auto;
+    animation: 120s credits linear infinite;
+}
+
+#app {
+    padding: 0px 50px;
+    margin: auto;
+    
+}
+
+h1 {
+    text-align: center;
+    font-family: "Gilroy-Heavy", Verdana, Geneva, Tahoma, sans-serif;
+    margin: 1em 0;
+    font-size: 8vw;
+    line-height: 0.85;
+}
+
+ul{
+    padding: 0 ;
+}
+
+li {
+    font-family: "Gilroy-Heavy", Verdana, Geneva, Tahoma, sans-serif;
+    list-style: none;
+    margin: 2em 0;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 3fr 1fr;
+}
+
+li .donor-name {
+    font-size: 4vw;
+    grid-row: 1/2; 
+    grid-column: 1/2;
+}
+
+li .donation-amount {
+    font-size: 4vw;
+    text-align: right;
+    grid-row: 1/2;
+    grid-column: 2/2;
+}
+
+li .donor-message {
+    font-family: "Gilroy-medium", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2vw;
+    grid-row: 2/2;
+    grid-column: 1/2;
+}
+
+li .donation-date {
+    font-family: "Gilroy-medium", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5vw;
+    opacity: .75;
+    font-style: italic;
+    grid-row: 2/2;
+    grid-column: 1/2;
+}
+  
+@keyframes credits {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: -500%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+
+    h1 {
+        font-size: 60px;
+    }
+
+    li .donor-name {
+        font-size: 30px;
+    }
+    
+    li .donation-amount {
+        font-size: 30px;
+    }
+    
+    li .donor-message {
+        font-size: 25px;
+    }
+    
+    li .donation-date {
+        font-size: 15px;
+    }
+
+}
