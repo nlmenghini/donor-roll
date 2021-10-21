@@ -23,7 +23,7 @@ extra-life.org/index.cfm?fuseaction=donordrive.participant&participantID=123456 
 
 If you don't wish to show the messages then delete or comment out this line in the donor-roll.html:
 
-<div class="donor-message">{{ donor.message }}</div>  <----
+"<div class="donor-message">{{ donor.message }}</div>"
 
 ----------------
 
