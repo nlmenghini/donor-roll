@@ -21,7 +21,7 @@ extra-life.org/index.cfm?fuseaction=donordrive.participant&participantID=123456 
 
 ----------------
 
-If you don't wish to show the messages then delete or comment out the whole <div> with the donor.message in donor-roll.html.
+If you don't wish to show the messages then delete or comment out the whole div with the donor.message in donor-roll.html.
 
 ----------------
 
