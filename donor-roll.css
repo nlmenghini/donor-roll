@@ -66,21 +66,18 @@ li {
 
 li .donor-name {
     font-size: 4vw;
-    grid-row: 1/2; 
     grid-column: 1/2;
 }
 
 li .donation-amount {
     font-size: 4vw;
     text-align: right;
-    grid-row: 1/2;
     grid-column: 2/2;
 }
 
 li .donor-message {
     font-family: "Gilroy-medium", Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2vw;
-    grid-row: 2/2;
     grid-column: 1/2;
 }
 
@@ -89,7 +86,6 @@ li .donation-date {
     font-size: 1.5vw;
     opacity: .75;
     font-style: italic;
-    grid-row: 2/2;
     grid-column: 1/2;
 }
   
@@ -121,7 +117,7 @@ li .donation-date {
     }
     
     li .donor-message {
-        font-size: 25px;
+        font-size: 18px;
     }
     
     li .donation-date {
