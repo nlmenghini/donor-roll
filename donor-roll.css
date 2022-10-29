@@ -2,15 +2,33 @@
     font-family: "Gilroy-Heavy";
     src: url("fonts/Gilroy-Heavy.otf") format("opentype");
 }
-
 @font-face {
     font-family: "Gilroy-SemiBold";
     src: url("fonts/Gilroy-SemiBold.otf") format("opentype");
 }
-
 @font-face {
     font-family: "Gilroy-Medium";
     src: url("fonts/Gilroy-Medium.otf") format("opentype");
+}
+@font-face {
+    font-family: "New_Airport_Dot_1";
+    src: url("fonts/NewAirportDot1.otf") format("opentype");
+}
+@font-face {
+    font-family: "New_Airport_Dot_2";
+    src: url("fonts/NewAirportDot2.otf") format("opentype");
+}
+@font-face {
+    font-family: "New_Airport_Dot_3";
+    src: url("fonts/NewAirportDot3.otf") format("opentype");
+}
+@font-face {
+    font-family: "New_Airport_Dot_4";
+    src: url("fonts/NewAirportDot4.otf") format("opentype");
+}
+@font-face {
+    font-family: "New_Airport_Dot_5";
+    src: url("fonts/NewAirportDot5.otf") format("opentype");
 }
 
 html, body {
@@ -20,6 +38,7 @@ html, body {
 
 body {
     overflow: hidden;
+    background-color: black;
 }
 
 .wrapper {
@@ -37,7 +56,7 @@ body {
 
 h1 {
     text-align: center;
-    font-family: "Gilroy-Heavy", Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "New_Airport_Dot_5", Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 1em;
     font-size: 8vw;
     line-height: 0.85;
@@ -45,7 +64,7 @@ h1 {
 
 h2 {
     text-align: center;
-    font-family: "Gilroy-Heavy", Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "New_Airport_Dot_4", Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 5em;
     font-size: 6vw;
     line-height: 1.0;
@@ -56,7 +75,7 @@ ul{
 }
 
 li {
-    font-family: "Gilroy-Heavy", Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "New_Airport_Dot_3", Verdana, Geneva, Tahoma, sans-serif;
     list-style: none;
     margin: 2em 0;
     display: grid;
@@ -124,4 +143,32 @@ li .donation-date {
         font-size: 15px;
     }
 
+}
+
+.glow {
+	color: rgba(255, 255, 255, 0.5);
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+	-moz-animation: glow 1s ease-in-out infinite alternate;
+	animation: glow 1s ease-in-out infinite alternate;
+}
+  
+@keyframes glow {
+  from {
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.4),
+            0 0 2px rgba(255, 255, 255, 0.4), 
+          0 0 3px rgba(255, 255, 255, 0.4), 
+          0 0 4px rgba(255, 255, 255, 0.4), 
+          0 0 5px rgba(255, 255, 255, 0.4), 
+          0 0 6px rgba(255, 255, 255, 0.4), 
+          0 0 7px rgba(255, 255, 255, 0.4);
+  }
+  to {
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.45),
+            0 0 3px rgba(255, 255, 255, 0.45),
+          0 0 4px rgba(255, 255, 255, 0.45), 
+          0 0 5px rgba(255, 255, 255, 0.45), 
+          0 0 6px rgba(255, 255, 255, 0.45), 
+          0 0 7px rgba(255, 255, 255, 0.45), 
+          0 0 8px rgba(255, 255, 255, 0.45);
+  }
 }

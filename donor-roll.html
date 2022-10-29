@@ -8,13 +8,13 @@
 <body>
   <div class="wrapper">
     <div id="app">
-      <h1>{{ message }}</h1>
+      <h1 class="glow">{{ message }}</h1>
       <ul>
         <li v-for="donor in donors" :key="donor.donationID">
-          <div class="donor-name">{{ donor.displayName || 'Mysterious Donor' }}</div>
-          <div class="donation-amount">${{ donor.amount }}</div>
-          <div class="donor-message">{{ donor.message }}</div>
-          <div class="donation-date">{{ donor.createdDateUTC | toLocaleTime }}</div>
+          <div class="donor-name glow">{{ donor.displayName || 'Mysterious Donor' }}</div>
+          <div class="donation-amount glow">${{ donor.amount }}</div>
+          <div class="donor-message glow">{{ donor.message }}</div>
+          <div class="donation-date glow">{{ donor.createdDateUTC | toLocaleTime }}</div>
         </li>
       </ul>
       <h2>{{ thank_you }}</h2>
@@ -25,8 +25,8 @@
     var app = new Vue({
       el: '#app',
       data: {
-        apiUrl: 'https://www.extra-life.org/api',
-        message: 'Donors',
+        apiUrl: 'https://extralife.donordrive.com/api',
+        message: '2022 Donors',
         thank_you: 'So long and thanks for all the fish!',
         donors: []
       },
@@ -47,7 +47,7 @@
           })
       },
       methods: {
-        async fetchDonationsForParticipant(participantId = "REPLACE WITH YOUR ID HERE, NO QUOTES") {
+        async fetchDonationsForParticipant(participantId = 484208) {
           const response = await fetch(`${this.apiUrl}/participants/${participantId}/donations`)
           return response.json()
         }
