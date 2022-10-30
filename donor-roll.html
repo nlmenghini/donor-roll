@@ -3,12 +3,13 @@
 <head>
   <title>Thanks for all the fish</title>
   <link rel="stylesheet" href="donor-roll.css">
-  <script src="https://unpkg.com/vue"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </script>
 </head>
 <body>
   <div class="wrapper">
     <div id="app">
-      <h1 class="glow">{{ message }}</h1>
+      <h1 class="header glow">{{ message }}</h1>
       <ul>
         <li v-for="donor in donors" :key="donor.donationID">
           <div class="donor-name glow">{{ donor.displayName || 'Mysterious Donor' }}</div>
@@ -17,7 +18,7 @@
           <div class="donation-date glow">{{ donor.createdDateUTC | toLocaleTime }}</div>
         </li>
       </ul>
-      <h2>{{ thank_you }}</h2>
+      <h2 class="thanks glow">{{ thank_you }}</h2>
     </div>
   </div>
 
