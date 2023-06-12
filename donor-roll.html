@@ -3,7 +3,8 @@
 <head>
   <title>Thanks for all the fish</title>
   <link rel="stylesheet" href="donor-roll.css">
-  <script src="https://unpkg.com/vue"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js">
+  </script>
 </head>
 <body>
   <div class="wrapper">
@@ -25,7 +26,7 @@
     var app = new Vue({
       el: '#app',
       data: {
-        apiUrl: 'https://www.extra-life.org/api',
+        apiUrl: 'https://extralife.donordrive.com/api',
         message: 'Donors',
         thank_you: 'So long and thanks for all the fish!',
         donors: []
