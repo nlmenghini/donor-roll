@@ -1,59 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Thanks for all the fish</title>
-  <link rel="stylesheet" href="donor-roll.css">
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js">
-  </script>
+    <title>Donors</title>
+    <link rel="stylesheet" type="text/css" href="donor-roll.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
+    <script src="donor-roll-settings.js"></script>
+    <script src="donor-roll-script.js"></script>
 </head>
 <body>
-  <div class="wrapper">
-    <div id="app">
-      <h1>{{ message }}</h1>
-      <ul>
-        <li v-for="donor in donors" :key="donor.donationID">
-          <div class="donor-name">{{ donor.displayName || 'Mysterious Donor' }}</div>
-          <div class="donation-amount">${{ donor.amount }}</div>
-          <div class="donor-message">{{ donor.message }}</div>
-          <div class="donation-date">{{ donor.createdDateUTC | toLocaleTime }}</div>
-        </li>
-      </ul>
-      <h2>{{ thank_you }}</h2>
+    <div class="container">
+        <h1 class="font-righteous header" id="customHeader"></h1>
+        <p id="donationCount"></p>
+        <p id="scrollingDuration"></p>
+        <ol id="donationList"></ol>
+        <h1 class="font-righteous thanks" id="customThankYou"></h1>
     </div>
-  </div>
-
-  <script>
-    var app = new Vue({
-      el: '#app',
-      data: {
-        apiUrl: 'https://extralife.donordrive.com/api',
-        message: 'Donors',
-        thank_you: 'So long and thanks for all the fish!',
-        donors: []
-      },
-      filters: {
-        toLocaleTime: function (value) {
-          if (!value) return ''
-          return new Date(value).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: '2-digit' })
-        }
-      },
-      created: async function() {
-        this.fetchDonationsForParticipant()
-          .then((donors) => {
-            console.log('DONORS', donors)
-            this.donors = donors
-          })
-          .catch((error) => {
-            console.log('Error', error)
-          })
-      },
-      methods: {
-        async fetchDonationsForParticipant(participantId = "REPLACE WITH YOUR ID HERE, NO QUOTES") {
-          const response = await fetch(`${this.apiUrl}/participants/${participantId}/donations`)
-          return response.json()
-        }
-      }
-    })
-  </script>
 </body>
+<script>
+    $(document).ready(function() {
+        $("#customHeader").text(customHeaderText);
+        $("#customHeader").css("font-size", customHeaderFontSize);
+        $("#customThankYou").text(customThankYou);
+        $("#customThankYou").css("font-size", customThankYouFontSize);
+    });
+</script>
 </html>

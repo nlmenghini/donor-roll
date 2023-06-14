@@ -1,127 +1,92 @@
-@font-face {
-    font-family: "Gilroy-Heavy";
-    src: url("fonts/Gilroy-Heavy.otf") format("opentype");
-}
-
-@font-face {
-    font-family: "Gilroy-SemiBold";
-    src: url("fonts/Gilroy-SemiBold.otf") format("opentype");
-}
-
-@font-face {
-    font-family: "Gilroy-Medium";
-    src: url("fonts/Gilroy-Medium.otf") format("opentype");
-}
-
-html, body {
-    height: 100%;
-    color: white;
-}
-
 body {
-    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
 }
 
-.wrapper {
-    position: relative;
-    top: 100%;
-    margin:auto;
-    animation: 120s credits linear infinite;
+.container {
+    width: 1920px;
+    height: 1080px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
 }
 
-#app {
-    padding: 0px 50px;
-    margin: auto;
-    
+.container::-webkit-scrollbar{
+    display: none;
+  }
+
+.font-righteous {
+    font-family: 'Righteous', sans-serif;
 }
 
 h1 {
     text-align: center;
-    font-family: "Gilroy-Heavy", Verdana, Geneva, Tahoma, sans-serif;
-    margin-bottom: 1em;
-    font-size: 8vw;
-    line-height: 0.85;
+    margin: 0px;
 }
 
-h2 {
-    text-align: center;
-    font-family: "Gilroy-Heavy", Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 5em;
-    font-size: 6vw;
-    line-height: 1.0;
+.donor-details{
+    margin: 5px 0;
+    font-weight: bold;
 }
 
-ul{
-    padding: 0 ;
+.dono-amount{
+    float: right;
 }
 
-li {
-    font-family: "Gilroy-Heavy", Verdana, Geneva, Tahoma, sans-serif;
-    list-style: none;
-    margin: 2em 0;
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: 3fr 1fr;
-}
-
-li .donor-name {
-    font-size: 4vw;
-    grid-column: 1/2;
-}
-
-li .donation-amount {
-    font-size: 4vw;
-    text-align: right;
-    grid-column: 2/2;
-}
-
-li .donor-message {
-    font-family: "Gilroy-medium", Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2vw;
-    grid-column: 1/2;
-}
-
-li .donation-date {
-    font-family: "Gilroy-medium", Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.5vw;
-    opacity: .75;
+.dono-message {
+    color: gray;
     font-style: italic;
-    grid-column: 1/2;
-}
-  
-@keyframes credits {
-    0% {
-        top: 150%;
-    }
-    100% {
-        top: -700%;
-    }
+    font-size: 0.9em;
+    margin: 5px 0;
 }
 
-@media only screen and (max-width: 750px) {
+.dono-date {
+    color: lightgray;
+    font-style: italic;
+    font-size: 0.75em;
+    margin: 5px 0;
+}
 
-    h1 {
-        font-size: 60px;
-    }
+.header {
+    margin: 1080px 0 0 0;
+}
+ 
+.thanks {
+    margin: 518px 0;
+}
 
-    h2 {
-        font-size: 40px;
-    }
+#donationCount, #scrollingDuration {
+    text-align: center;
+    font-style: italic;
+    margin: 0 0 20px 0;
+}
 
-    li .donor-name {
-        font-size: 30px;
-    }
-    
-    li .donation-amount {
-        font-size: 30px;
-    }
-    
-    li .donor-message {
-        font-size: 18px;
-    }
-    
-    li .donation-date {
-        font-size: 15px;
-    }
+#donationList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
+#donationList li {
+    margin-bottom:0px;
+    padding: 10px 0;
+}
+
+#donationList li:last-child {
+    margin-bottom: 0;
+}
+
+/* Dark Mode colors */
+.dark-mode {
+    color: white;
+}
+.dark-mode .dono-message{
+    color: rgba(255,255,255,.75);
+}
+.dark-mode .dono-date{
+    color: rgba(255,255,255,.5);;
 }
