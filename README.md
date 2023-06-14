@@ -16,6 +16,7 @@ extra-life.org/index.cfm?fuseaction=donordrive.participant&participantID=123456 
 Check the donor-roll-settings.js file for simple customizations options.
 
 showDate -> tunrs on and off the donation date
+
 showMessageElement -> turn on and off the message for a donation
 scrollDurationMultiplier -> this controls the speed of the scroll; default is 1 second per donation received
 customHeaderText -> change the header text
