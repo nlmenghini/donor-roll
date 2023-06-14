@@ -27,9 +27,11 @@ customThankYou -> change the message at the end
 
 isDarkMode -> make type light or dark
 
+----------------
 
 Custom fonts sizes for all the various type displays. This could change wildly based on your setup and what you want. Just play around with it.
 
+----------------
 
 Debuggins settings
 enableAutoScroll -> turns scroll on an off so you can manually scroll and look through things
