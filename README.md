@@ -25,15 +25,17 @@ customHeaderText -> change the header text
 
 customThankYou -> change the message at the end
 
-isDarkMode -> make type light or dark
+columnCount -> let's you set how many columns you want the donos to fall into. More columns for more donos means a shorter scroll.
 
 ----------------
+
+Themes for picking something to fit with your setup. Based around EL branding.
 
 Custom fonts sizes for all the various type displays. This could change wildly based on your setup and what you want. Just play around with it.
 
 ----------------
 
-Debuggins settings
+Debuggings settings
 enableAutoScroll -> turns scroll on an off so you can manually scroll and look through things
 
 enableDonationCount - > lets you see how many donations it's pulling in case you think it's wrong
