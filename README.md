@@ -36,6 +36,7 @@ Custom fonts sizes for all the various type displays. This could change wildly b
 ----------------
 
 Debuggings settings
+
 enableAutoScroll -> turns scroll on an off so you can manually scroll and look through things
 
 enableDonationCount - > lets you see how many donations it's pulling in case you think it's wrong
