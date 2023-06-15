@@ -5,7 +5,7 @@ var showMessageElement = true; // Control the visibility of messageElement
 var scrollDurationMultiplier = 1000; // Default is 1 second per donation (1000); increase this for more time
 var customHeaderText = "Donors"; // Default "Donors"
 var customThankYou = "So long, and thanks for all the fish."; // Default "So long, and thanks for all the fish."
-var columnCount = 3; //Default is 1. If you have lots of donos try 2 or 3. Would not recommend more than 3. Scroll speed will remaing the same.
+var columnCount = 1; //Default is 1. If you have lots of donos try 2 or 3. Would not recommend more than 3. Scroll speed will remaing the same.
 
 //Theming. Default is Blue 1. Make sure to only have one of these on.
 var theme = "Blue1"; // Options: "Blue1", "Blue2", "Green", "LightMode", "DarkMode"
