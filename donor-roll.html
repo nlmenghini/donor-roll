@@ -2,20 +2,18 @@
 <html>
 <head>
     <title>Donors</title>
-    <link rel="stylesheet" type="text/css" href="donor-roll.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
     <script src="donor-roll-settings.js"></script>
     <script src="donor-roll-script.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/donor-roll.css">
 </head>
 <body>
     <div class="container">
-        <h1 class="font-righteous header" id="customHeader"></h1>
+        <h1 class="header" id="customHeader"></h1>
         <p id="donationCount"></p>
         <p id="scrollingDuration"></p>
         <ol id="donationList"></ol>
-        <h1 class="font-righteous thanks" id="customThankYou"></h1>
+        <h1 class="thanks" id="customThankYou"></h1>
     </div>
 </body>
 <script>
@@ -24,6 +22,7 @@
         $("#customHeader").css("font-size", customHeaderFontSize);
         $("#customThankYou").text(customThankYou);
         $("#customThankYou").css("font-size", customThankYouFontSize);
+        $("#donationList").css("column-count", columnCount);
     });
 </script>
 </html>

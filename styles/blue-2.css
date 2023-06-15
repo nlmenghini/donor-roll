@@ -1,0 +1,35 @@
+body {
+    background: rgba(0,0,0,.25);
+}
+
+.header{
+    color: #1D4C6C;
+}
+
+#donationCount{
+    color: #1D4C6C;
+}
+
+#scrollingDuration{
+    color: #1D4C6C;
+}
+
+.dono-amount{
+    color: rgba(255,255,255,1);
+}
+
+.donor-name{
+    color: #1D4C6C;
+}
+
+.dono-message{
+    color: #1D4C6C;
+}
+
+.dono-date{
+    color: #1D4C6C;
+}
+
+.thanks{
+    color: #1D4C6C;
+}

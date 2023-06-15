@@ -1,0 +1,106 @@
+@font-face {
+    font-family: "Gilroy-Heavy";
+    src: url("../fonts/Gilroy-Heavy.otf") format("opentype");
+}
+@font-face {
+    font-family: "Gilroy-Black";
+    src: url("../fonts/Gilroy-Black.otf") format("opentype");
+}
+@font-face {
+    font-family: "Proxima-Nova-Reg";
+    src: url("../fonts/Proxima-Nova-Reg.otf") format("opentype");
+}
+@font-face {
+    font-family: "Proxima-Nova-Reg-It";
+    src: url("../fonts/Proxima-Nova-Reg-It.otf") format("opentype");
+}
+@font-face {
+    font-family: "Furore";
+    src: url("../fonts/Furore.otf") format("opentype");
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 1920px;
+    height: 1080px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+  }
+
+h1 {
+    font-family: 'Gilroy-Heavy', sans-serif;
+    text-align: center;
+    margin: 0px;
+}
+
+.donor-details {
+    font-family: 'Proxima-Nova-Reg', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.donor-name {
+    font-family: 'Gilroy-Black', sans-serif;
+    font-weight: 800;
+}
+
+.dono-amount {
+    font-family: 'Furore', sans-serif;
+}
+
+.dono-message {
+    font-family: 'Proxima-Nova-Reg', sans-serif;
+    text-align: center;
+    width: 70%;
+}
+
+.dono-date {
+    font-family: 'Proxima-Nova-Reg-It', sans-serif;
+}
+
+.header {
+    margin: 1080px 0 0 0;
+}
+ 
+.thanks {
+    margin: 518px 0;
+}
+
+#donationCount, #scrollingDuration {
+    text-align: center;
+    font-style: italic;
+    margin: 0 0 20px 0;
+}
+
+#donationList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#donationList li {
+    margin-bottom:0px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    -webkit-column-break-inside: avoid;
+    gap: 5px;
+}
+
+#donationList li:last-child {
+    margin-bottom: 0;
+}

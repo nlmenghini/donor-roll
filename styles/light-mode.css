@@ -1,0 +1,12 @@
+body {
+    color: rgba(0,0,0,.95);;
+    background: rgba(255,255,255,1);
+}
+
+.dono-message{
+    color: rgba(0,0,0,.85);
+}
+
+.dono-date{
+    color: rgba(0,0,0,.75);
+}
