@@ -27,6 +27,13 @@ customThankYou -> change the message at the end
 
 columnCount -> let's you set how many columns you want the donos to fall into. More columns for more donos means a shorter scroll.
 
+showTotal -> turn the total raised display at the end on and off
+
+showLogo -> turn the Extra Logo fade at the end on and off
+
+scrollDelay -> set how long you want the delay the scroll for, nice to have on if you have long transitions.
+
+
 ----------------
 
 Themes for picking something to fit with your setup. Based around EL branding.

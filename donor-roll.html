@@ -13,7 +13,13 @@
         <p id="donationCount"></p>
         <p id="scrollingDuration"></p>
         <ol id="donationList"></ol>
+        <h1 class="total" id="donationAmount"></h1>
         <h1 class="thanks" id="customThankYou"></h1>
+    </div>
+    <div class="new-container">
+         <div class="logo" id="logo">
+            <img src = "images\EL_full.svg" alt="Extra Life"/>
+        </div>
     </div>
 </body>
 <script>
@@ -22,7 +28,8 @@
         $("#customHeader").css("font-size", customHeaderFontSize);
         $("#customThankYou").text(customThankYou);
         $("#customThankYou").css("font-size", customThankYouFontSize);
-        $("#donationList").css("column-count", columnCount);
+        $("#donationAmount").css("font-size", customTotalSize);
+        $("#donationList").css("column-count", columnCount);       
     });
 </script>
 </html>

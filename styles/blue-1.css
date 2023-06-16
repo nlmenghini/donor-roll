@@ -1,35 +1,20 @@
 body {
-    background: rgba(255,255,255,1);
+    background-color: #fff;
 }
 
-.header{
-    color: #1D4C6C;
+.header,
+#donationCount,
+#scrollingDuration,
+.donor-name,
+.dono-message,
+.dono-date,
+.thanks,
+.total {
+    color: #1d4c6c;
 }
 
-#donationCount{
-    color: #1D4C6C;
+.dono-amount,
+.totalAmount {
+color: #26c2eb;
 }
-
-#scrollingDuration{
-    color: #1D4C6C;
-}
-
-.dono-amount{
-    color: #26C2EB;
-}
-
-.donor-name{
-    color: #1D4C6C;
-}
-
-.dono-message{
-    color: #1D4C6C;
-}
-
-.dono-date{
-    color: #1D4C6C;
-}
-
-.thanks{
-    color: #1D4C6C;
-}
+  
