@@ -1,9 +1,9 @@
 // Display settings
-var participantId = "Enter your ID"; // Enter your participant ID, you can find it at the end of the url for your Extra Life page
+var participantId = "516575"; // Enter your participant ID, you can find it at the end of the url for your Extra Life page
 var showDate = true; // Variable to control the visibility of the date element
 var showMessageElement = true; // Control the visibility of messageElement
 var scrollDurationMultiplier = 1000; // Default is 1 second per donation (1000); increase this for more time
-var customHeaderText = "Donors"; // Default "Donors"
+var customHeaderText = "All-star Donors"; // Default "Donors"
 var customThankYou = "So long, and thanks for all the fish."; // Default "So long, and thanks for all the fish."
 var columnCount = 1; //Default is 1. If you have lots of donos try 2 or 3. Would not recommend more than 3. Scroll speed will remaing the same.
 var showTotal = false; // Default is false; Turns total raised at the end on and off.
