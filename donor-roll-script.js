@@ -114,7 +114,7 @@ $(document).ready(function() {
         donationsByRecipient.forEach(function(donation) {
           if (donation.recipientName !== currentRecipient) {
             currentRecipient = donation.recipientName;
-            var recipientHeader = $("<li class='recipient-header'></li>").text("For " + currentRecipient).css("font-size", customRecipHeaderFontSize);
+            var recipientHeader = $("<li class='recipient-header'></li>").text(customRecipientHeaderText+ " " + currentRecipient).css("font-size", customRecipHeaderFontSize);
             recipientHeader.append("<br>");
             if (/^\d{5}$/.test(teamId) && groupDonationsByRecipient){
               donationList.append(recipientHeader); 

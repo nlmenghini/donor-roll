@@ -28,6 +28,7 @@ var customDonoDateFontSize = "16px"; // Default "16px"
 // Team only settings
 var showRecipientPerDonation = false; // Control the visibility of who the donation went to on each donation (team only setting)
 var groupDonationsByRecipient = true; // Group donations by who they went to (team only setting)
+var customRecipientHeaderText = "For"; // Default "For"
 var customRecipHeaderFontSize = "50px"; // Default "50px"
 var customDonoRecipFontSize = "20px"; // Default "16px" (team only setting)
 
