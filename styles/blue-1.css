@@ -9,7 +9,9 @@ body {
 .dono-message,
 .dono-date,
 .thanks,
-.total {
+.total,
+.dono-recipient,
+.recipient-header {
     color: #1d4c6c;
 }
 
