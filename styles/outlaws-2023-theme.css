@@ -1,0 +1,108 @@
+body {
+    background-color: rgba(0,0,0,1);
+}
+
+.header,
+#donationCount,
+#scrollingDuration,
+.donor-name,
+.dono-message,
+.dono-date,
+.thanks,
+.total,
+.dono-recipient,
+.recipient-header {
+    color: white;
+}
+
+.dono-amount{
+    color: #11f9f8;
+}
+.totalAmount {
+color: #FFE81F;
+}
+
+.seafoam-glow {
+    -webkit-animation: seafoam-glow 5s ease-in-out infinite alternate;
+    -moz-animation: seafoam-glow 5s ease-in-out infinite alternate;
+    animation: seafoam-glow 5s ease-in-out infinite alternate;
+    z-index: 100;
+}
+  
+.gold-glow {
+    -webkit-animation: gold-glow 5s ease-in-out infinite alternate;
+    -moz-animation: gold-glow 5s ease-in-out infinite alternate;
+    animation: gold-glow 5s ease-in-out infinite alternate;
+    z-index: 100;
+}
+   
+@keyframes seafoam-glow {
+    from {
+        text-shadow: 0 0 1px rgba(17,249,249, 0.4),
+                0 0 2px rgba(17,249,2495, 0.4), 
+              0 0 3px rgba(17,249,249, 0.4), 
+              0 0 4px rgba(17,249,249, 0.4), 
+              0 0 5px rgba(17,249,249, 0.4), 
+              0 0 6px rgba(17,249,249, 0.4), 
+              0 0 7px rgba(17,249,249, 0.4);
+      }
+      to {
+        text-shadow: 0 0 2px rgba(17,249,249, 0.45),
+                0 0 3px rgba(17,249,249, 0.45),
+              0 0 4px rgba(17,249,249, 0.45), 
+              0 0 5px rgba(17,249,249, 0.45), 
+              0 0 6px rgba(17,249,249, 0.45), 
+              0 0 7px rgba(17,249,249, 0.45), 
+              0 0 8px rgba(17,249,249, 0.45);
+      }
+}
+  
+@keyframes gold-glow {
+    from {
+        text-shadow: 0 0 1px rgba(255, 232, 31, 0.4),
+                0 0 2px rgba(255, 232, 31, 0.4), 
+              0 0 3px rgba(255, 232, 31, 0.4), 
+              0 0 4px rgba(255, 232, 31, 0.4), 
+              0 0 5px rgba(255, 232, 31, 0.4), 
+              0 0 6px rgba(255, 232, 31, 0.4), 
+              0 0 7px rgba(255, 232, 31, 0.4);
+      }
+      to {
+        text-shadow: 0 0 2px rgba(255, 232, 31, 0.45),
+                0 0 3px rgba(255, 232, 31, 0.45),
+              0 0 4px rgba(255, 232, 31, 0.45), 
+              0 0 5px rgba(255, 232, 31, 0.45), 
+              0 0 6px rgba(255, 232, 31, 0.45), 
+              0 0 7px rgba(255, 232, 31, 0.45), 
+              0 0 8px rgba(255, 232, 31, 0.45);
+      }
+}
+
+.glow {
+	color: rgba(255, 255, 255, 0.5);
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+	-moz-animation: glow 1s ease-in-out infinite alternate;
+	animation: glow 1s ease-in-out infinite alternate;
+}
+  
+@keyframes glow {
+  from {
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.4),
+            0 0 2px rgba(255, 255, 255, 0.4), 
+          0 0 3px rgba(255, 255, 255, 0.4), 
+          0 0 4px rgba(255, 255, 255, 0.4), 
+          0 0 5px rgba(255, 255, 255, 0.4), 
+          0 0 6px rgba(255, 255, 255, 0.4), 
+          0 0 7px rgba(255, 255, 255, 0.4);
+  }
+  to {
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.45),
+            0 0 3px rgba(255, 255, 255, 0.45),
+          0 0 4px rgba(255, 255, 255, 0.45), 
+          0 0 5px rgba(255, 255, 255, 0.45), 
+          0 0 6px rgba(255, 255, 255, 0.45), 
+          0 0 7px rgba(255, 255, 255, 0.45), 
+          0 0 8px rgba(255, 255, 255, 0.45);
+  }
+}
+  

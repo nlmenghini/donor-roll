@@ -11,7 +11,8 @@ $(document).ready(function() {
     Light: "light.css",
     Blue1: "blue-1.css",
     Blue2: "blue-2.css",
-    Green: "green.css"
+    Green: "green.css",
+    Outlaws: "outlaws-2023-theme.css"
   };
 
   function applyTheme(theme) {
@@ -78,7 +79,7 @@ $(document).ready(function() {
 
             var displayName = donation.displayName || "Mysterious Donor";
             var displayNameAmount = $("<div class='donor-details'></div>")
-              .append($("<span class='dono-amount'></span>").append($("<span class='dollar-symbol'></span>").text("$")).append(donation.amount).css("font-size", customDonoAmountFontSize))
+              .append($("<span class='dono-amount seafoam-glow'></span>").append($("<span class='dollar-symbol'></span>").text("$")).append(donation.amount).css("font-size", customDonoAmountFontSize))
               .append($("<span class='donor-name'></span>").text(displayName).css("font-size", customDonorNameFontSize));
 
             var messageElement = showMessageElement && donation.message ? $("<div class='dono-message'></div>").text(donation.message).css("font-size", customDonoMessageFontSize) : null;
