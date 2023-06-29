@@ -22,6 +22,10 @@ $(document).ready(function() {
     }
   }
 
+  function formatAmountWithCommas(amount) {
+    return amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  } 
+
   applyTheme(theme);
 
   var donationsByRecipient = [];
@@ -77,9 +81,40 @@ $(document).ready(function() {
             var donationItem = $("<li id=#donationItem></li>").css("flex-basis", columnWidth);
 
             var displayName = donation.displayName || "Mysterious Donor";
+
+            var formattedAmount = formatAmountWithCommas(donation.amount);
             var displayNameAmount = $("<div class='donor-details'></div>")
-              .append($("<span class='dono-amount'></span>").append($("<span class='dollar-symbol'></span>").text("$")).append(donation.amount).css("font-size", customDonoAmountFontSize))
+              .append($("<span class='dono-amount'></span>").append($("<span class='dollar-symbol'></span>").text("$")).append(formattedAmount).css("font-size", customDonoAmountFontSize))
               .append($("<span class='donor-name'></span>").text(displayName).css("font-size", customDonorNameFontSize));
+
+            var isAmount100to500 = donation.amount >= 100 && donation.amount < 500;
+            var isAmount500to1000 = donation.amount >= 500 && donation.amount < 1000;
+            var isAmount1000plus = donation.amount >= 1000;
+
+            donoAmountFontSize = customDonoAmountFontSize;
+
+            if (highlightLargeDonoText) {
+              if (isAmount100to500) {
+                donoAmountFontSize = parseInt(customDonoAmountFontSize) + 10 + 'px';
+              }
+              if (isAmount500to1000) {
+                donoAmountFontSize = parseInt(customDonoAmountFontSize) + 20 + 'px';
+              }
+              if (isAmount1000plus) {
+                donoAmountFontSize = parseInt(customDonoAmountFontSize) + 30 + 'px';
+              }
+            }
+            if (highlightLargeDonoColor) {
+              if (isAmount500to1000) {
+                displayNameAmount.find('.dono-amount').addClass('five-hundred-club');
+              }
+              if (isAmount1000plus) {
+                displayNameAmount.find('.dono-amount').addClass('thousand-club');
+              }
+            }
+
+            // Update the font size for specific donation amounts
+            displayNameAmount.find('.dono-amount').css("font-size", donoAmountFontSize);
 
             var messageElement = showMessageElement && donation.message ? $("<div class='dono-message'></div>").text(donation.message).css("font-size", customDonoMessageFontSize) : null;
             var dateElement = showDate ? $("<div class='dono-date'></div>").text(formattedDate).css("font-size", customDonoDateFontSize) : null;
