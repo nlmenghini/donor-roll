@@ -153,3 +153,65 @@ h1 {
     font-weight: 800;
     flex: 0 0 100% !important;
 }
+
+@-moz-keyframes shimmer {
+    0% {
+      background-position: top left;
+    }
+    100% {
+      background-position: top right;
+    }
+  }
+  @-webkit-keyframes shimmer {
+    0% {
+      background-position: top left;
+    }
+    100% {
+      background-position: top right;
+    }
+  }
+  @-o-keyframes shimmer {
+    0% {
+      background-position: top left;
+    }
+    100% {
+      background-position: top right;
+    }
+  }
+  @keyframes shimmer {
+    0% {
+      background-position: top left;
+    }
+    100% {
+      background-position: top right;
+    }
+  }
+  
+  .five-hundred-club {
+    background: #96063C;
+    background: linear-gradient(to right, #2ac2ea 0%, #1d4d6d 16%, #00b1b0 32%, #87c540 48% , #2ac2ea 64%, #1d4d6d 80%, #00b1b0 100%);
+  }
+  
+  .thousand-club {
+    background: #FFE81F;
+    background: linear-gradient(to right, #ed8080 0%, #2a77d6 16%, #5eb524 32%, #eacd25 48%, #ed8080 64%, #2a77d6 80%, #5eb524 100%);
+  }
+  
+  .five-hundred-club,
+  .thousand-club {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.1) !important;
+    -webkit-background-size: 300% 300%;
+    -moz-background-size: 300% 300%;
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    animation: shimmer infinite 3s linear;
+    -o-animation: shimmer infinite 3s linear;
+    -moz-animation: shimmer infinite 3s linear;
+    -webkit-animation: shimmer infinite 3s linear;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-color: #222;
+  }

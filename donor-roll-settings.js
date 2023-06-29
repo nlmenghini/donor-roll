@@ -15,6 +15,8 @@ var showLogo = true; // Default is true; Turns logo at the end on and off.
 
 //Theming. Default is Blue 1. Make sure to only have one of these on.
 var theme = "Blue1"; // Options: "Blue1", "Blue2", "Green", "Light", "Dark"
+var highlightLargeDonoText = false; // Default false. This makes $100+ donos bigger, $500+ even bigger, $1000+ donos bigger still.
+var highlightLargeDonoColor = false; // Default false. This adds a color effect to 500+ donos and a fancy color effect to 1000+ donos.
 
 // Custom type sizes. A bigger number means bigger text. A smaller number, smaller text. Don't forget the px.
 var customHeaderFontSize = "100px"; // Default "100px"
@@ -35,5 +37,5 @@ var customDonoRecipFontSize = "20px"; // Default "16px" (team only setting)
 // Debugging settings
 var enableAutoScroll = true; // Control the automatic scroll behavior, default is true
 var enableDonationCount = false; // Control the visibility of the donation count, default is false
-var showID = false; // default is false, good if you think you are getting duplicates
+var showID = false; // Default is false, good if you think you are getting duplicates
 var enableScrollDurationDisplay = false; // default is false, good for seeing how long your credits will take to scroll to the bottom
