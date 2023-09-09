@@ -14,7 +14,6 @@
     font-family: "Proxima-Nova-Reg-It";
     src: url("../fonts/Proxima-Nova-Reg-It.otf") format("opentype");
 }
-
 @font-face {
     font-family: "Furore";
     src: url("../fonts/Furore.otf") format("opentype");
@@ -30,6 +29,10 @@
 @font-face {
     font-family: "FuturaNowHeadlineMedium";
     src: url("../fonts/FuturaNowHeadlineMedium.ttf") format('truetype');
+}
+@font-face {
+    font-family: "BrockmannMedium";
+    src: url("../fonts/brockmann-medium-webfont.woff2") format('woff');
 }
 
 body {
@@ -57,36 +60,44 @@ body {
 }
 
 h1 {
-    font-family: 'Marvin-Visions-Big-Bold', sans-serif;
+    font-family: 'BrockmannMedium', sans-serif;
     text-align: center;
     margin: 0;
+    text-transform: uppercase;
+    font-feature-settings: "ss01";
 }
 
 .donor-details {
-    font-family: 'FuturaNowHeadlineMedium', sans-serif;
+    font-family: 'BrockmannMedium', sans-serif;
     text-align: center;
     display: flex;
     flex-direction: column;
 }
 
 .donor-name {
-    font-family: 'FuturaNowHeadlineBlack', sans-serif;
-    font-weight: 800;
+    font-family: 'BrockmannMedium', sans-serif;
+    padding: 5px 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-feature-settings: "ss01";
 }
 
 .dono-amount,
 .totalAmount {
-    font-family: 'Furore', sans-serif;
+    font-family: 'BrockmannMedium', sans-serif;
+    font-weight: 900;
 }
 
 .dono-message, .dono-recipient {
-    font-family: 'FuturaNowHeadlineMedium', sans-serif;
+    font-family: 'BrockmannMedium', sans-serif;
     text-align: center;
     width: 70%;
+    font-feature-settings: "ss01";
 }
 
 .dono-date {
-    font-family: 'FuturaNowHeadlineMedium', sans-serif;
+    font-family: 'BrockmannMedium', sans-serif;
+    font-feature-settings: "ss01";
 }
 
 .header {
@@ -94,7 +105,9 @@ h1 {
 }
 
 .thanks {
+    text-transform: uppercase;
     margin: 518px 0;
+    font-feature-settings: "ss01";
 }
 
 .total {
@@ -111,7 +124,7 @@ h1 {
 
 .error {
     text-align: center;
-    font-family: 'FuturaNowHeadlineMedium', sans-serif;
+    font-family: 'BrockmannMedium', sans-serif;
     font-size: 40px;
     color: #c73047;
     border: 3px solid #c73047;

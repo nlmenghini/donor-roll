@@ -1,0 +1,27 @@
+body {
+    background-color: rgba(0,0,0,1);
+}
+
+.header,
+#donationCount,
+#scrollingDuration,
+.donor-name,
+.dono-message,
+.dono-date,
+.thanks,
+.total,
+.dono-recipient,
+.recipient-header {
+    color: #FAF7DC;
+}
+
+.dono-amount, .totalAmount{
+    color: #49D59C;
+}
+.stylistic-set-1 {
+    font-feature-settings: "ss01";
+}
+
+.stylistic-set-2 {
+    font-feature-settings: "ss02";
+}
