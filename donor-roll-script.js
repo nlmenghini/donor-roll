@@ -11,7 +11,12 @@ $(document).ready(function() {
     Light: "light.css",
     Blue1: "blue-1.css",
     Blue2: "blue-2.css",
+<<<<<<< Updated upstream
     Green: "green.css"
+=======
+    Green: "green.css",
+    Year2023: "2024-theme.css"
+>>>>>>> Stashed changes
   };
 
   function applyTheme(theme) {

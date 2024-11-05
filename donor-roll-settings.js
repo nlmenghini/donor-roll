@@ -1,5 +1,9 @@
 // ID settings (USE ONLY ONE, not both!)
+<<<<<<< Updated upstream
 var participantId = "Enter your ID"; // Enter your participant ID, you can find it at the end of the url for your Extra Life page
+=======
+var participantId = "535396"; // Enter your participant ID, you can find it at the end of the url for your Extra Life page
+>>>>>>> Stashed changes
 var teamId = "Enter your Team ID"; // Enter your participant ID, you can find it at the end of the url for your Extra Life page
 
 // Display settings

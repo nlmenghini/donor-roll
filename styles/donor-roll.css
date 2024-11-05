@@ -22,6 +22,39 @@
     font-family: "Furore";
     src: url("../fonts/Furore.otf") format("opentype");
 }
+<<<<<<< Updated upstream
+=======
+@font-face {
+    font-family: "Marvin-Visions-Big-Bold";
+    src: url("../fonts/MarvinVisionsBig-Bold.woff2") format('woff');
+}
+@font-face {
+    font-family: "FuturaNowHeadlineBlack";
+    src: url("../fonts/FuturaNowHeadlineBlack.ttf") format('truetype');
+} 
+@font-face {
+    font-family: "FuturaNowHeadlineMedium";
+    src: url("../fonts/FuturaNowHeadlineMedium.ttf") format('truetype');
+}
+@font-face {
+    font-family: "BrockmannMedium";
+    src: url("../fonts/brockmann-medium-webfont.woff2") format('woff');
+}
+@font-face {
+    font-family: "NBArchitekLight";
+    src: url("../fonts/NBArchitektStd-Light.otf") format('opentype');
+}
+
+@font-face {
+    font-family: "NBArchitekRegular";
+    src: url("../fonts/NBArchitektStd-Regular.otf") format('opentype');
+}
+
+@font-face {
+    font-family: "NBArchitekBold";
+    src: url("../fonts/NBArchitektStd-Bold.otf") format('opentype');
+}
+>>>>>>> Stashed changes
 
 body {
     margin: 0;
@@ -48,36 +81,66 @@ body {
 }
 
 h1 {
+<<<<<<< Updated upstream
     font-family: 'Gilroy-Heavy', sans-serif;
+=======
+    font-family: 'NBArchitekBold', sans-serif;
+>>>>>>> Stashed changes
     text-align: center;
     margin: 0;
 }
 
 .donor-details {
+<<<<<<< Updated upstream
     font-family: 'Proxima-Nova-Reg', sans-serif;
+=======
+    font-family: 'NBArchitekBold', sans-serif;
+>>>>>>> Stashed changes
     text-align: center;
     display: flex;
     flex-direction: column;
 }
 
 .donor-name {
+<<<<<<< Updated upstream
     font-family: 'Gilroy-Black', sans-serif;
     font-weight: 800;
+=======
+    font-family: 'NBArchitekBold', sans-serif;
+    padding: 5px 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-feature-settings: "ss01";
+>>>>>>> Stashed changes
 }
 
 .dono-amount,
 .totalAmount {
+<<<<<<< Updated upstream
     font-family: 'Furore', sans-serif;
 }
 
 .dono-message, .dono-recipient {
     font-family: 'Proxima-Nova-Reg', sans-serif;
+=======
+    font-family: 'NBArchitekBold', sans-serif;
+    font-weight: 900;
+}
+
+.dono-message, .dono-recipient {
+    font-family: 'NBArchitekBold', sans-serif;
+>>>>>>> Stashed changes
     text-align: center;
     width: 70%;
 }
 
 .dono-date {
+<<<<<<< Updated upstream
     font-family: 'Proxima-Nova-Reg-It', sans-serif;
+=======
+    font-family: 'NBArchitekBold', sans-serif;
+    font-feature-settings: "ss01";
+>>>>>>> Stashed changes
 }
 
 .header {
