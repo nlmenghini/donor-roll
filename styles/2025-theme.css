@@ -1,5 +1,16 @@
+:root {
+    --white: #ece8e8;
+    --black: #2c2c2c;
+    --black-80: #2c2c2c80;
+    --purple: #3f3451;
+    --green: #b1e2be;
+    --yellow: #ffcf10;
+    --blue: #add8e6;
+    --orange: #ffc183;
+}
+
 body {
-    background-color: rgba(0,0,0,1);
+    background-color: rgba(0,0,0,0);
 }
 
 .header,
@@ -12,11 +23,11 @@ body {
 .total,
 .dono-recipient,
 .recipient-header {
-    color: #f4f4f9;
+    color: var(--purple);
 }
 
 .dono-amount, .totalAmount{
-    color: #26c2eb;
+    color: var(--orange);
 }
 .stylistic-set-1 {
     font-feature-settings: "ss01";

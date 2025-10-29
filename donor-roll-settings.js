@@ -1,9 +1,5 @@
 // ID settings (USE ONLY ONE, not both!)
-<<<<<<< Updated upstream
-var participantId = "Enter your ID"; // Enter your participant ID, you can find it at the end of the url for your Extra Life page
-=======
-var participantId = "535396"; // Enter your participant ID, you can find it at the end of the url for your Extra Life page
->>>>>>> Stashed changes
+var participantId = "554341"; // Enter your participant ID, you can find it at the end of the url for your Extra Life page
 var teamId = "Enter your Team ID"; // Enter your participant ID, you can find it at the end of the url for your Extra Life page
 
 // Display settings
@@ -18,16 +14,16 @@ var showTotal = false; // Default is false; Turns total raised at the end on and
 var showLogo = true; // Default is true; Turns logo at the end on and off.
 
 //Theming. Default is Blue 1. Make sure to only have one of these on.
-var theme = "Blue1"; // Options: "Blue1", "Blue2", "Green", "Light", "Dark"
+var theme = "Year2025"; // Options: "Blue1", "Blue2", "Green", "Light", "Dark"
 
 // Custom type sizes. A bigger number means bigger text. A smaller number, smaller text. Don't forget the px.
-var customHeaderFontSize = "100px"; // Default "100px"
-var customTotalSize = "80px"; // Default "50px"
-var customThankYouFontSize = "50px"; // Default "50px"
-var customDonoAmountFontSize = "40px"; // Default "40px"
-var customDonorNameFontSize = "30px"; // Default "30px"
-var customDonoMessageFontSize = "18px"; // Default "18px"
-var customDonoDateFontSize = "16px"; // Default "16px"
+var customHeaderFontSize = "120px"; // Default "100px"
+var customTotalSize = "100px"; // Default "50px"
+var customThankYouFontSize = "70px"; // Default "50px"
+var customDonoAmountFontSize = "60px"; // Default "40px"
+var customDonorNameFontSize = "50px"; // Default "30px"
+var customDonoMessageFontSize = "38px"; // Default "18px"
+var customDonoDateFontSize = "36px"; // Default "16px"
 
 // Team only settings
 var showRecipientPerDonation = false; // Control the visibility of who the donation went to on each donation (team only setting)
